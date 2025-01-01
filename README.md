@@ -58,8 +58,6 @@ A modern social networking application built with React Native and Expo, featuri
 2. **Installation**
    ```bash
    # Clone the repository
-   git clone https://github.com/yourusername/social-sphere.git
-   cd social-sphere
 
    # Install dependencies
    npm install --legacy-peer-deps
