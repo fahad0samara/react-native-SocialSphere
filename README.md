@@ -1,50 +1,174 @@
-# Welcome to your Expo app 👋
+# SocialSphere
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern social networking application built with React Native and Expo, featuring real-time interactions, beautiful UI, and comprehensive social features.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- 📱 Cross-platform (iOS, Android, Web) support
+- 🔥 Firebase Integration (Authentication, Firestore, Storage)
+- 👥 Rich social features (profiles, posts, comments)
+- 🎨 Modern UI with animations
+- 🌍 Internationalization support
+- 📸 Image handling and upload capabilities
+- 🏃‍♂️ High-performance list rendering
+- 💾 Local storage management
+- 🔔 Push notifications
+- 🌙 Dark mode support
 
+## 📚 Tech Stack
+
+### Core
+- React Native 0.74.5
+- Expo SDK 52.0.0
+- TypeScript
+- Expo Router 2.0.0
+
+### State Management & Data
+- Zustand for state management
+- @react-native-async-storage/async-storage for local storage
+- Firebase (Authentication, Firestore, Storage)
+
+### UI Components & Styling
+- @shopify/flash-list for high-performance lists
+- react-native-reanimated for animations
+- lottie-react-native for beautiful animations
+- expo-image for optimized image handling
+- @expo/vector-icons for icons
+
+### Features & Utilities
+- expo-notifications for push notifications
+- expo-image-picker for image selection
+- i18n-js & expo-localization for internationalization
+- date-fns for date manipulation
+
+### Development Tools
+- ESLint with TypeScript support
+- Prettier for code formatting
+- Jest for testing
+
+## 🛠️ Setup & Installation
+
+1. **Prerequisites**
    ```bash
-   npm install
+   # Install Node.js (v18 or higher)
+   # Install Expo CLI
+   npm install -g expo-cli
    ```
 
-2. Start the app
-
+2. **Installation**
    ```bash
-    npx expo start
+   # Clone the repository
+   git clone https://github.com/yourusername/social-sphere.git
+   cd social-sphere
+
+   # Install dependencies
+   npm install --legacy-peer-deps
    ```
 
-In the output, you'll find options to open the app in a
+3. **Environment Setup**
+   - Create a `.env` file in the root directory
+   - Add your Firebase configuration
+   ```env
+   FIREBASE_API_KEY=your_api_key
+   FIREBASE_AUTH_DOMAIN=your_auth_domain
+   FIREBASE_PROJECT_ID=your_project_id
+   FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   FIREBASE_APP_ID=your_app_id
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 📱 Running the App
 
 ```bash
-npm run reset-project
+# Start the development server
+npm start
+
+# Run on iOS
+npm run ios
+
+# Run on Android
+npm run android
+
+# Run on Web
+npm run web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🧪 Testing
 
-## Learn more
+```bash
+# Run tests
+npm test
 
-To learn more about developing your project with Expo, look at the following resources:
+# Run linting
+npm run lint
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Format code
+npm run format
+```
 
-## Join the community
+## 📦 Building for Production
 
-Join our community of developers creating universal apps.
+```bash
+# Build for Android
+npm run build:android
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Build for iOS
+npm run build:ios
+```
+
+## 📂 Project Structure
+
+```
+social-sphere/
+├── app/                   # App navigation and screens
+│   ├── (auth)/           # Authentication screens
+│   ├── (tabs)/           # Main tab screens
+│   └── _layout.tsx       # Root layout
+├── components/           # Reusable components
+├── constants/           # App constants and theme
+├── hooks/              # Custom hooks
+├── services/          # API and service integrations
+├── store/             # State management
+├── types/             # TypeScript types
+├── utils/             # Utility functions
+└── assets/            # Images, fonts, etc.
+```
+
+## 🔧 Available Scripts
+
+- `npm start` - Start the Expo development server
+- `npm run android` - Run on Android
+- `npm run ios` - Run on iOS
+- `npm run web` - Run on web
+- `npm test` - Run tests
+- `npm run lint` - Check code for errors
+- `npm run format` - Format code using Prettier
+- `npm run build:android` - Build Android app
+- `npm run build:ios` - Build iOS app
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Authors
+
+- Your Name - Initial work
+
+## 🙏 Acknowledgments
+
+- [Expo](https://expo.dev/)
+- [React Native](https://reactnative.dev/)
+- [Firebase](https://firebase.google.com/)
+- All other open-source libraries used in this project
+
+---
+
+Made with ❤️ by SocialSphere Team
